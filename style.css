@@ -1,0 +1,292 @@
+body {font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header { background-image: url(header.jpg);
+       background-size: cover;
+       background-repeat: no-repeat;   
+}
+
+
+h1 {
+  text-align: center;
+  color: #FF6F00; /* Orange, like the logo's hair */
+  font-size: 500%;
+  text-shadow: 5px 5px 8px #000000; /* Softened shadow */
+  font-family: "Bangers", system-ui;
+  margin-bottom: 0; /* Tighten spacing to logo */
+}
+
+
+
+
+
+h2 {
+  color: #003C58;           /* Dark blue, matching the nav background */
+  font-family: "Bangers", system-ui;
+  font-size: 250%;         /* Slightly smaller than h1 */
+  text-shadow: 2px 2px 4px rgba(255, 111, 0, 0.5); /* Orange shadow */
+  text-align: center;      /* Optional: center the text */
+  margin-bottom: 1em;     /* Add some spacing below */
+}
+
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+nav {   font-size: 120%; }
+
+nav ul { padding-left: 0;
+       display: flex; 
+       flex-direction: row; 
+       flex-wrap: wrap; 
+       justify-content: space-around; }	  
+nav ul { list-style-type: none; }
+nav li {
+  width: 20%;
+  min-width: 6em;
+  font-size: 110%;
+  font-family: "Bangers", system-ui;
+  text-align: center;
+  background-color: #003C58;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 10px;  /* Rounded corners for a playful look */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover effects */
+}
+nav li:hover {
+  transform: translateY(-2px); /* Lift up slightly on hover */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}
+
+nav li a {
+  color: #FF6F00; /* Orange text (matching the h1) */
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-shadow: 0 0 5px #FF6F00; /* Add a subtle glow to the text on hover */
+}
+
+nav a { text-decoration: none;}
+nav a:link { color: #F7F1E3; }
+nav a:visited { color: #B9EDF0; }
+nav a:hover { color: #FFFFFF; }
+#wrapper {
+  max-width: 80%;    /* Allows container to scale down */
+  margin: 0 auto;     /* Center the container */
+  background-color: #f5f5f5;
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+  #wrapper {
+    max-width: 95%; 
+  }
+}
+aside {  padding: 1em;}
+
+main {   padding: 0 1em 1em;    }
+
+footer {
+  background-color: #FF6F00; /* Bright orange background */
+  text-align: center;
+  padding: 1em;
+  font-family: "Bangers", system-ui;
+  font-size: 120%;
+  color: white;          /* White text for contrast */
+  border-top: 5px solid #003C58; /* Dark blue border for separation */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle top shadow */
+}
+
+
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    /* Container */
+.container {
+  width: 80%;            /* Adjust the width as needed */
+  margin: 20px auto;     /* Center the form on the page */
+  padding: 20px;
+  border-radius: 10px;   /* Rounded corners for a softer look */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  background-color: #f2f2f2;  /* Light gray background */
+  font-family: "Open Sans", sans-serif; 
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #003C58;       /* Dark blue */
+}
+
+/* Inputs, Select, Textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #FF6F00; /* Bright orange */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Bangers", system-ui;
+}
+
+input[type="submit"]:hover {
+  background-color: #FFA000; /* Slightly darker orange on hover */
+}
+
+
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+      
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+      
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+      
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+      
+      /* Add a card effect for articles */
+      .card {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+/* New footer styles */
+.footer-content {
+  display: flex;          /* Arrange content in a row */
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center;    /* Align items vertically */
+}
+
+.social-icons a {
+  margin: 0 10px;         /* Add spacing between icons */
+}
+
+.social-icons img {
+  width: 30px;            /* Adjust icon size as needed */
+  height: 30px;
+}
+
+.copyright {
+  font-size: 14px;        /* Adjust font size as needed */
+  color: white;          /* Ensure text is visible on orange background */
+}
+
+
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      table {
+        width: 80%;            /* Adjust width as needed */
+        margin: 20px auto;     /* Center the table */
+        border-collapse: collapse;
+        font-family: "Open Sans", sans-serif; /* Use a readable font for the table */
+      }
+      
+      th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      th {
+        background-color: #FF6F00; /* Orange header background */
+        color: white;              /* White header text */
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light gray background for even rows */
+      }
+      
+
+      img {
+        max-width: 100%; 
+        height: auto;       /* Maintain aspect ratio */
+      }
+
+      article {
+        margin-bottom: 30px;  /* Add space between articles */
+      }
+      
+      .date {
+        font-style: italic;
+        color: #888;        /* Light gray for the date */
+      }
+      
